@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int num;
+	cout << "enter num:";
+	cin >> num;
+	int sum =0;
+	int rem;
+	int armstrong=num;
+	while(num>0){
+		rem = num%10;
+		sum+= rem*rem*rem;
+		num/=10;
+	}
+	if(sum==armstrong){
+		cout << "Armstong num";
+	} else {
+		cout << "not a armstrong";
+	}
+	return 0;
+}
